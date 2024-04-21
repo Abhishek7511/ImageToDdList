@@ -1,0 +1,59 @@
+/* Write your desired css here */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 200px; /* Adjust height as needed */
+}
+
+.carousel-items {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.app-container {
+    padding: 20px;
+}
+
+.dropzone {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.file-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.file-list .thumbnail {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.file-list .thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.file-list .thumbnail .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
